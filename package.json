@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/webpack-dev-server --mode development --open --hot",
-    "build": "node_modules/.bin/webpack --config webpack.prod.js --mode production",
-    "serve": "node_modules/.bin/http-server ./dist"
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --config webpack.prod.js --mode production",
+    "serve": "http-server ./dist"
   },
   "author": "Ajay Varghese",
   "license": "ISC",
