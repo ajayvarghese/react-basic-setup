@@ -1,3 +1,5 @@
 .wrapper{
-  border: 1px solid brown;
+  display: inline-block;
+  padding: 5px 7px;
+  border: 1px solid black;
 }
