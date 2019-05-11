@@ -4,7 +4,7 @@ class App extends Component {
     render() {
         return (
           <div className={styles.wrapper}>
-            <h1>My React App Dim</h1>
+            <h1>My React App</h1>
           </div>
           )
     }
