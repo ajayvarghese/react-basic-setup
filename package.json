@@ -10,11 +10,11 @@
     "start": "better-npm-run dev:start",
     "build": "better-npm-run build",
     "build:profile": "rimraf build && webpack --config ./webpack/webpack.prod.js --mode production --profile --json > stats.json",
-    "serve": "http-server ./dist -p 9000"
+    "serve": "http-server ./build -p 9000"
   },
   "betterScripts": {
     "dev:start": {
-      "command": "webpack-dev-server --config ./webpack/webpack.config.js --port 8000 --mode development --open --hot",
+      "command": "webpack-dev-server --config ./webpack/webpack.dev.js --port 8000 --mode development --open --hot",
       "env": {
         "NODE_ENV": "development"
       }
@@ -54,6 +54,7 @@
     "html-webpack-plugin": "^3.2.0",
     "http-server": "^0.11.1",
     "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "react-hot-loader": "^4.8.8",

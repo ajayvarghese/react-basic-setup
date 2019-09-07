@@ -2,7 +2,7 @@ const path = require("path");
 const CopyPlugin = require('copy-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const merge = require('webpack-merge');
-const base = require("./webpack.base.config");
+const base = require("./webpack.common");
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -10,7 +10,6 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 const config = {
   mode: 'production',
-  devtool: 'cheap-module-source-map',
   optimization: {
     minimizer: [
       new TerserJSPlugin({}),
