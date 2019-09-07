@@ -1,0 +1,60 @@
+/*
+:: GLOBAL CSS
+:: Created By: Ajay Varghese
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding:0;
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+button, input {
+  outline: none;
+}
+
+.flex,
+.vert-center,
+.horiz-center {
+  display: flex;
+}
+
+.vert-center {
+  align-items: center;
+}
+
+.horiz-center {
+  justify-content: center;
+}
+
+.pos-abs-zero {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}

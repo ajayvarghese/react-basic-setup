@@ -1,11 +1,39 @@
 {
-    "presets": [
-        "@babel/env",
-        "@babel/react",
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
     ],
-    "plugins": [
-        ["react-css-modules", {
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    "@babel/plugin-transform-async-to-generator",
+    "babel-plugin-syntax-trailing-function-commas",
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-syntax-dynamic-import",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "helpers": false,
+        "regenerator": true
+      }
+    ],
+    "@babel/plugin-transform-react-display-name",
+    [
+      "react-css-modules",
+      {
         "generateScopedName": "[name]__[local]___[hash:base64:5]"
-        }]
-    ]
+      }
+    ],
+    "react-hot-loader/babel"
+  ]
 }

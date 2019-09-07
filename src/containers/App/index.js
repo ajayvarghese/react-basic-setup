@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styles from './App.css';
+import { hot } from 'react-hot-loader/root';
+
 class App extends Component {
     render() {
         return (
@@ -77,4 +79,4 @@ function Header() {
   );
 }
 
-export default App;
+export default hot(App);
